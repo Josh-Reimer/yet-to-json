@@ -79,5 +79,5 @@ def convert_to_json(input_file, output_file):
 
 # Usage
 input_yet_file = "kjv-red.yet"  # Replace with your .yet file
-output_json_file = "kjv-red2.json"
+output_json_file = "kjv-red.json"
 convert_to_json(input_yet_file, output_json_file) 

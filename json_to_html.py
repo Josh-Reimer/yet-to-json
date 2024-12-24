@@ -71,6 +71,6 @@ def json_to_html(input_file, output_file):
     print(f"Converted {input_file} to {output_file}")
 
 # Usage
-input_json_file = "kjv-red2.json"  # Replace with your JSON file
+input_json_file = "kjv-red.json"  # Replace with your JSON file
 output_html_file = "example.html"
 json_to_html(input_json_file, output_html_file)
