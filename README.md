@@ -1,6 +1,6 @@
 # YET-to-JSON Converter
 
-YET-to-JSON Converter is a Python tool designed to parse and convert `.yet` Bible files into structured `.json` files. It processes the hierarchical data from YET files and organizes it into a JSON format where:
+YET-to-JSON Converter is a Python tool designed to parse and convert `.yet` Bible files into structured `.json` files. If you are wondering what YET files are, check out [this android app that uses them](https://github.com/yukuku/androidbible). YET-to-JSON Converter processes the hierarchical data from YET files and organizes it into a JSON format where:
 
 - Each **book** contains its respective chapters.
 - Each **chapter** contains its verses as properties.
