@@ -58,9 +58,9 @@ def parse_yet_file(file_path):
                         "is_red_letter": False
                     })
                 
-                # Clean up formatting tags
+                # Clean up unwanted formatting tags (@7, @9, @@, and other tags)
                 for segment in segments:
-                    segment["text"] = re.sub(r"@@|@[^0-9]", "", segment["text"]).strip()
+                    segment["text"] = re.sub(r"@7|@9|@@|@[^0-9]", "", segment["text"]).strip()
                 
                 # Add verse data to the corresponding book
                 if book_id in data["books"]:
@@ -80,4 +80,4 @@ def convert_to_json(input_file, output_file):
 # Usage
 input_yet_file = "kjv-red.yet"  # Replace with your .yet file
 output_json_file = "kjv-red2.json"
-convert_to_json(input_yet_file, output_json_file)
+convert_to_json(input_yet_file, output_json_file) 
