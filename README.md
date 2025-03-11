@@ -11,7 +11,6 @@ YET-to-JSON Converter is a Python tool designed to parse and convert `.yet` Bibl
 - **Structured Output**: Books, chapters, and verses are neatly organized for better usability.
 - **Red-Letter Text**: Words of Jesus are preserved and marked within the JSON structure.
 - **Footnote Removal**: Automatically removes footnotes for cleaner output.
-- **Customizable**: Easily adaptable for other parsing needs or output formats.
 
 ## Example Output
 
@@ -23,7 +22,7 @@ verse        1    1    1    @@In the beginning @6God created the heavens and the
 verse        1    1    2    @@The earth was formless and empty.
 ```
 
-Will generate the following JSON:
+Will generate the following JSON (example json as there actually are no words Jesus in that verse):
 ```
 {
     "info": {},
@@ -54,6 +53,8 @@ Will generate the following JSON:
         }
     }
 }
+
+
 ```
 ## Requirements
 - Python 3.7+
@@ -61,14 +62,14 @@ Will generate the following JSON:
 Clone this repository:
 
 ```
-git clone https://github.com/your-username/yet-to-json-converter.git
+git clone https://github.com/Josh-Reimer/yet-to-json-converter.git
 cd yet-to-json-converter
 ```
 
 ## Usage
 To convert a .yet file to .json, run:
 ```
-python converter.py input_file.yet output_file.json
+python3 converter.py input_file.yet output_file.json
 ```
 Replace input_file.yet with the path to your .yet file, and output_file.json with the desired output path.
 
